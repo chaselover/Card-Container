@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+.card {
+  display: flex;
+  width: 80%;
+  color: white;
+  background-color: #1c1938;
+  border-radius: 10px;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.explain {
+  height: 70%;
+  padding-bottom: 40px;
+}
+.explain p {
+  font-weight: 20;
+  opacity: 0.5;
+}
+
+.counter {
+  display: flex;
+  height: 30%;
+  width: 100%;
+  flex-flow: row nowrap;
+}
+
+.counter-items {
+  flex-grow: 1;
+}
+
+.counter-items h2 {
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.counter-items p {
+  margin-top: 5px;
+  opacity: 0.5;
+}
+
+.words {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  width: 55%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  -webkit-filter: opacity(0.5) drop-shadow(0 0 0 purple);
+  filter: opacity(0.3) drop-shadow(0 0 0 purple);
+  border-radius: 0px 10px 10px 0px;
+}
+
+@media (max-width: 720px) {
+  .card {
+    flex-direction: column-reverse;
+    text-align: center;
+    width: 50%;
+    height: 95%;
+  }
+  .image-container {
+    height: 35%;
+  }
+  img {
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .words {
+    margin: 0 auto;
+    height: 65%;
+    width: 80%;
+  }
+  .explain {
+    height: 50%;
+    font-size: 0.8rem;
+    padding-bottom: 0;
+  }
+
+  .counter {
+    flex-direction: column;
+    height: 50%;
+  }
+  .counter-items h2 {
+    margin-bottom: 2px;
+    font-size: 20px;
+  }
+
+  .counter-items p {
+    margin-top: 2px;
+    font-size: 0.5rem;
+    opacity: 0.5;
+  }
+}
